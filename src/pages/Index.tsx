@@ -1,4 +1,3 @@
-import { CustomCursor } from "@/components/custom-cursor"
 import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
 import { ServicesSection } from "@/components/sections/services-section"
@@ -144,13 +143,12 @@ export default function Index() {
 
   return (
     <main className="relative h-screen w-full overflow-hidden bg-background">
-      <CustomCursor />
       <GrainOverlay />
 
       <div
         className="fixed inset-0 z-0"
         style={{
-          backgroundImage: "url('https://cdn.poehali.dev/projects/3f86149c-5636-4787-b88f-18ed141904d6/bucket/12c8c37c-54f6-4ef9-baa9-a747d1406c5f.png')",
+          backgroundImage: "url('https://cdn.poehali.dev/projects/3f86149c-5636-4787-b88f-18ed141904d6/bucket/dd04f839-8761-45d9-aa5d-17d1d4c27651.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
