@@ -158,7 +158,7 @@ export default function Index() {
       </div>
 
       <nav
-        className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-6 transition-opacity duration-700 md:px-12 ${
+        className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-4 transition-opacity duration-700 md:px-12 bg-black/40 backdrop-blur-md border-b border-white/5 ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -169,7 +169,7 @@ export default function Index() {
           <img
             src="https://cdn.poehali.dev/projects/3f86149c-5636-4787-b88f-18ed141904d6/bucket/ef1d49d2-29d7-496f-bc77-d856315600e5.png"
             alt="Мастерская Горбунова"
-            className="logo-glow h-20 w-auto object-contain md:h-24"
+            className="logo-glow h-14 w-auto object-contain md:h-16"
           />
         </button>
 
@@ -206,7 +206,7 @@ export default function Index() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
-        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-24 md:px-12 md:pb-24">
+        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-32 md:px-12 md:pb-24 md:pt-36">
           <div className="max-w-3xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
               <p className="font-mono text-xs text-foreground/90">Современные технологии</p>
@@ -235,12 +235,9 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-in fade-in duration-1000 delay-500">
+          <div className="absolute bottom-8 right-8 animate-in fade-in duration-1000 delay-500 md:right-12">
             <div className="flex items-center gap-2">
-              <p className="font-mono text-xs text-foreground/80">Листайте вправо</p>
-              <div className="flex h-6 w-12 items-center justify-center rounded-full border border-foreground/20 bg-foreground/15 backdrop-blur-md">
-                <div className="h-2 w-2 animate-pulse rounded-full bg-foreground/80" />
-              </div>
+              <p className="font-mono text-xs text-foreground/60">свайп →</p>
             </div>
           </div>
         </section>

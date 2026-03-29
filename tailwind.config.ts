@@ -18,7 +18,7 @@ export default {
 			}
 		},
 		fontFamily: {
-			sans: ['Montserrat', 'system-ui', '-apple-system', 'sans-serif'],
+			sans: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
 			mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
 		},
 		extend: {
