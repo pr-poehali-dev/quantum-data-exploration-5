@@ -1,4 +1,3 @@
-import { Shader, ChromaFlow, Swirl } from "shaders/react"
 import { CustomCursor } from "@/components/custom-cursor"
 import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
@@ -14,37 +13,10 @@ export default function Index() {
   const [isLoaded, setIsLoaded] = useState(false)
   const touchStartY = useRef(0)
   const touchStartX = useRef(0)
-  const shaderContainerRef = useRef<HTMLDivElement>(null)
   const scrollThrottleRef = useRef<number>()
 
   useEffect(() => {
-    const checkShaderReady = () => {
-      if (shaderContainerRef.current) {
-        const canvas = shaderContainerRef.current.querySelector("canvas")
-        if (canvas && canvas.width > 0 && canvas.height > 0) {
-          setIsLoaded(true)
-          return true
-        }
-      }
-      return false
-    }
-
-    if (checkShaderReady()) return
-
-    const intervalId = setInterval(() => {
-      if (checkShaderReady()) {
-        clearInterval(intervalId)
-      }
-    }, 100)
-
-    const fallbackTimer = setTimeout(() => {
-      setIsLoaded(true)
-    }, 1500)
-
-    return () => {
-      clearInterval(intervalId)
-      clearTimeout(fallbackTimer)
-    }
+    setIsLoaded(true)
   }, [])
 
   const scrollToSection = (index: number) => {
@@ -176,38 +148,15 @@ export default function Index() {
       <GrainOverlay />
 
       <div
-        ref={shaderContainerRef}
-        className={`fixed inset-0 z-0 transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
-        style={{ contain: "strict" }}
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: "url('https://cdn.poehali.dev/projects/3f86149c-5636-4787-b88f-18ed141904d6/bucket/12c8c37c-54f6-4ef9-baa9-a747d1406c5f.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
-        <Shader className="h-full w-full">
-          <Swirl
-            colorA="#3d1a08"
-            colorB="#c8841e"
-            speed={0.4}
-            detail={0.6}
-            blend={60}
-            coarseX={30}
-            coarseY={30}
-            mediumX={50}
-            mediumY={50}
-            fineX={20}
-            fineY={20}
-          />
-          <ChromaFlow
-            baseColor="#2a1005"
-            upColor="#c8841e"
-            downColor="#1a0a03"
-            leftColor="#8b5a1a"
-            rightColor="#d4a044"
-            intensity={0.85}
-            radius={1.6}
-            momentum={30}
-            maskType="alpha"
-            opacity={0.95}
-          />
-        </Shader>
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <nav
