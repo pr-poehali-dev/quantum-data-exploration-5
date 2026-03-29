@@ -19,11 +19,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               }`}
             >
               <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
-                Строим
+                Точка
                 <br />
-                цифровое
+                сборки
                 <br />
-                <span className="text-foreground/40">завтра</span>
+                <span className="text-foreground/40">вашего бизнеса</span>
               </h2>
             </div>
 
@@ -34,10 +34,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Мы превращаем идеи в продукты, которые работают. Разрабатываем SaaS-платформы, корпоративные системы и цифровые сервисы под ключ.
+                Бизнес — это не просто логотип и сайт. Это система. Стратегия. Смысл. Позиционирование.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                От концепции до запуска — берём на себя всё: проектирование, разработку и поддержку.
+                Мы собираем бренд в единую точку: от идеи — до результата. Глубокое погружение в ваш бизнес, а не красивые картинки.
               </p>
             </div>
           </div>
@@ -45,9 +45,9 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "200+", label: "Проектов", sublabel: "Запущено по всему миру", direction: "right" },
-              { value: "5", label: "Лет", sublabel: "На рынке цифровых продуктов", direction: "left" },
-              { value: "98%", label: "Клиентов", sublabel: "Возвращаются снова", direction: "right" },
+              { value: "120+", label: "Брендов", sublabel: "Собраны в единую систему", direction: "right" },
+              { value: "7", label: "Лет", sublabel: "Погружения в бизнес клиентов", direction: "left" },
+              { value: "94%", label: "Клиентов", sublabel: "Возвращаются за следующим этапом", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {
@@ -84,10 +84,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           style={{ transitionDelay: "750ms" }}
         >
           <MagneticButton size="lg" variant="primary" onClick={() => scrollToSection?.(4)}>
-            Начать проект
+            Оставить заявку
           </MagneticButton>
           <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(1)}>
-            Смотреть работы
+            Посмотреть портфолио
           </MagneticButton>
         </div>
       </div>

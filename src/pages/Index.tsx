@@ -182,32 +182,32 @@ export default function Index() {
       >
         <Shader className="h-full w-full">
           <Swirl
-            colorA="#1275d8"
-            colorB="#e19136"
-            speed={0.8}
-            detail={0.8}
-            blend={50}
-            coarseX={40}
-            coarseY={40}
-            mediumX={40}
-            mediumY={40}
-            fineX={40}
-            fineY={40}
+            colorA="#3d1a08"
+            colorB="#c8841e"
+            speed={0.4}
+            detail={0.6}
+            blend={60}
+            coarseX={30}
+            coarseY={30}
+            mediumX={50}
+            mediumY={50}
+            fineX={20}
+            fineY={20}
           />
           <ChromaFlow
-            baseColor="#0066ff"
-            upColor="#0066ff"
-            downColor="#d1d1d1"
-            leftColor="#e19136"
-            rightColor="#e19136"
-            intensity={0.9}
-            radius={1.8}
-            momentum={25}
+            baseColor="#2a1005"
+            upColor="#c8841e"
+            downColor="#1a0a03"
+            leftColor="#8b5a1a"
+            rightColor="#d4a044"
+            intensity={0.85}
+            radius={1.6}
+            momentum={30}
             maskType="alpha"
-            opacity={0.97}
+            opacity={0.95}
           />
         </Shader>
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <nav
@@ -219,14 +219,14 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
-            <span className="font-sans text-xl font-bold text-foreground">Ц</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-foreground/30 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-foreground/60">
+            <span className="font-sans text-lg font-light text-foreground">✦</span>
           </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">ЦифроБуд</span>
+          <span className="font-sans text-xl font-light tracking-widest text-foreground uppercase">Мастерская Горбунова</span>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Главная", "Работы", "Услуги", "О нас", "Контакты"].map((item, index) => (
+          {["Главная", "Портфолио", "Услуги", "О нас", "Контакты"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -245,7 +245,7 @@ export default function Index() {
         </div>
 
         <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
-          Начать
+          Оставить заявку
         </MagneticButton>
       </nav>
 

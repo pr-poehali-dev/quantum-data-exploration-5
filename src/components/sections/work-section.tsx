@@ -15,31 +15,31 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Портфолио
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные проекты</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "NovaPay",
-              category: "SaaS / Финтех платформа",
+              title: "Artisán",
+              category: "Брендинг / Упаковка / Стратегия",
               year: "2025",
               direction: "left",
             },
             {
               number: "02",
-              title: "FleetOS",
-              category: "B2B / Управление автопарком",
+              title: "Северный путь",
+              category: "Фирменный стиль / Позиционирование",
               year: "2025",
               direction: "right",
             },
             {
               number: "03",
-              title: "MedCard",
-              category: "HealthTech / Цифровая медкарта",
+              title: "Клиника Здоровье",
+              category: "Логотип / Сайт / Реклама",
               year: "2024",
               direction: "left",
             },
