@@ -24,23 +24,23 @@ export function WorkSection() {
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "NovaPay",
+              category: "SaaS / Финтех платформа",
+              year: "2025",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "FleetOS",
+              category: "B2B / Управление автопарком",
+              year: "2025",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "MedCard",
+              category: "HealthTech / Цифровая медкарта",
+              year: "2024",
               direction: "left",
             },
           ].map((project, i) => (
