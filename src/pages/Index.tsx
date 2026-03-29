@@ -217,12 +217,13 @@ export default function Index() {
       >
         <button
           onClick={() => scrollToSection(0)}
-          className="flex items-center gap-2 transition-transform hover:scale-105"
+          className="transition-opacity hover:opacity-80"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-foreground/30 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-foreground/60">
-            <span className="font-sans text-lg font-light text-foreground">✦</span>
-          </div>
-          <span className="font-sans text-xl font-light tracking-widest text-foreground uppercase">Мастерская Горбунова</span>
+          <img
+            src="https://cdn.poehali.dev/projects/3f86149c-5636-4787-b88f-18ed141904d6/bucket/ef1d49d2-29d7-496f-bc77-d856315600e5.png"
+            alt="Мастерская Горбунова"
+            className="h-14 w-auto object-contain"
+          />
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
