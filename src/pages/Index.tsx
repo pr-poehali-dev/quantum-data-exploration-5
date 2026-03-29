@@ -156,7 +156,7 @@ export default function Index() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/65" />
       </div>
 
       <nav
@@ -166,12 +166,12 @@ export default function Index() {
       >
         <button
           onClick={() => scrollToSection(0)}
-          className="transition-opacity hover:opacity-80"
+          className="transition-opacity hover:opacity-90"
         >
           <img
             src="https://cdn.poehali.dev/projects/3f86149c-5636-4787-b88f-18ed141904d6/bucket/ef1d49d2-29d7-496f-bc77-d856315600e5.png"
             alt="Мастерская Горбунова"
-            className="h-14 w-auto object-contain"
+            className="logo-glow h-20 w-auto object-contain md:h-24"
           />
         </button>
 

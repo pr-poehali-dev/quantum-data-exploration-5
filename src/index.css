@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -164,6 +164,23 @@
   .delay-500 {
     animation-delay: 500ms;
   }
+}
+
+@keyframes logoGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 8px rgba(212, 160, 68, 0.3))
+      drop-shadow(0 0 20px rgba(212, 160, 68, 0.1));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(212, 160, 68, 0.8))
+      drop-shadow(0 0 40px rgba(212, 160, 68, 0.4))
+      drop-shadow(0 0 60px rgba(212, 160, 68, 0.2));
+  }
+}
+
+.logo-glow {
+  animation: logoGlow 4s ease-in-out infinite;
 }
 
 @keyframes fadeIn {
